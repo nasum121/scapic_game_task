@@ -15,14 +15,14 @@
 <canvas id="mycanvas" width="1000" height="650"></canvas>
 <script type="text/javascript">
 
-	var canvas=document.getElementById("mycanvas");
-	var ctx=canvas.getContext("2d");
-	var x=canvas.width/2;
-	var y=canvas.height-30;
-	var dx=2;
-	var dy=-2;
-	var ballRadius=8;
-	var paddleHeight = 15;
+    var canvas=document.getElementById("mycanvas");
+    var ctx=canvas.getContext("2d");
+    var x=canvas.width/2;
+    var y=canvas.height-30;
+    var dx=2;
+    var dy=-2;
+    var ballRadius=8;
+    var paddleHeight = 15;
     var paddleWidth = 125;
     var paddleX = (canvas.width-paddleWidth)/2;
     var rightPressed = false;
@@ -216,7 +216,6 @@ else if(leftPressed && paddleX > 0)
 
          drawScore();
          drawLives();
-
          drawPaddle();
          if(rightPressed && paddleX < canvas.width-paddleWidth) 
         {
